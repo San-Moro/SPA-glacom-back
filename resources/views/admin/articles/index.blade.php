@@ -32,9 +32,9 @@
                                 <td>{{ $article->created_at }}</td>
                                 <td>
                                     @if ($article->cover_image)
-                                        <img src="{{ asset('storage/' . $article->cover_image)}}" alt="{{ 'image of ' . $article->title }}">
+                                        <img class="w-50" src="{{ asset('storage/' . $article->cover_image)}}" alt="{{ 'image of ' . $article->title }}">
                                     @else
-                                        <div class="bg-secondary p-3 text-center text-white">No image</div>
+                                        <div class="bg-secondary p-3 text-center text-white w-50">No image</div>
                                     @endif
                                 </td>
                                 <td>

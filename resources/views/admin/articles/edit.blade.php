@@ -29,9 +29,9 @@
                         <label for="cover_image">Image</label>
                         <input type="file" name="cover_image" id="cover_image" class="form-control">
                         {{-- Image Preview --}}
-                        <div id="image-preview" style="max-height: 200px">
+                        <div id="image-preview" >
                             @if ($article->cover_image)
-                                <img src="{{ asset('storage/' . $article->cover_image) }}" alt="{{ 'image of ' . $article->title }}">
+                                <img class="w-50" src="{{ asset('storage/' . $article->cover_image) }}" alt="{{ 'image of ' . $article->title }}">
                             @else
                                 <p>No Image</p>
                             @endif
